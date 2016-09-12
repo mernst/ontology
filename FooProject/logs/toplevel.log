@@ -1,0 +1,12 @@
+[INFO] Running command /Users/charleszhuochen/Programming/UWaterloo/jsr308/do-like-javac/dljc -t inference --checker ontology.OntologyChecker --solver ontology.solvers.backend.OntologyConstraintSolver -o logs -m ROUNDTRIP -afud /Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject/annotated -- ant
+[INFO] Platform: Darwin-14.5.0-x86_64-i386-64bit
+[INFO] PATH=/Users/charleszhuochen/.pyenv/versions/2.7.10/bin:/usr/local/Cellar/pyenv/20150913/libexec:/Users/charleszhuochen/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/charleszhuochen/Programming/UWaterloo/jsr308/annotation-tools/annotation-file-utilities/scripts
+[INFO] SHELL=/bin/zsh
+[INFO] PWD=/Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject
+[INFO] Results: [{'java_files': ['/Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject/src/Sort01.java'],
+  'javac_switches': {'classpath': '/Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject/classes',
+                     'd': '/Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject/classes',
+                     'g:source,lines,vars': True,
+                     'source': '1.7',
+                     'sourcepath': '/Users/charleszhuochen/Programming/UWaterloo/jsr308/ontology/FooProject/src',
+                     'target': '1.7'}}]
