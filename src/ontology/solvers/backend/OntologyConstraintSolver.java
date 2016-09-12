@@ -108,10 +108,10 @@ public class OntologyConstraintSolver extends ConstraintSolver {
                     continue;
                 }
 
-//               PreferenceConstraint preferCons = InferenceMain.getInstance().getConstraintManager()
-//               .createPreferenceConstraint((VariableSlot) superType, curBtm, 50);
-               PreferenceConstraint preferCons = new PreferenceConstraint((VariableSlot) superType, curBtm, 50);
-               InferenceMain.getInstance().getConstraintManager().add(preferCons);
+               PreferenceConstraint preferCons = InferenceMain.getInstance().getConstraintManager()
+               .createPreferenceConstraint((VariableSlot) superType, curBtm, 50);
+//               PreferenceConstraint preferCons = new PreferenceConstraint((VariableSlot) superType, curBtm, 50);
+//               InferenceMain.getInstance().getConstraintManager().add(preferCons);
                preferSet.add(preferCons);
             }
         }
