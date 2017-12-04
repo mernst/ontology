@@ -5,13 +5,13 @@ projects:
   build: mvn install
   clean: mvn clean
 
-- name: boofcv
+- name: BoofCV
   giturl: https://github.com/lessthanoptimal/BoofCV.git
   git-ref: 16fff968dbbe07af4a9cb14395a89cde18ffb72e
   build: gradle compileJava
   clean: gradle clean
 
-- name: catalano
+- name: Catalano-Framework
   giturl: https://github.com/DiegoCatalano/Catalano-Framework.git
   git-ref: 381b7c29ef73bca1e5479fc715fb285e6697d7bd
   build-dir: Catalano.Image
@@ -30,7 +30,7 @@ projects:
   build: ant build
   clean: ant clean
 
-- name: jreactphysics3d
+- name: jReactPhysics3D
   giturl: https://github.com/kovertopz/jReactPhysics3D.git
   git-ref: 8da0120f5fa2254a7e98a14f3446d97096bb0fd7
   build: mvn package -Dmaven.test.skip=true
@@ -66,7 +66,7 @@ projects:
   build: mvn compile
   clean: mvn clean
 
-- name: thumbnailinator
+- name: thumbnailator
   giturl: https://github.com/coobird/thumbnailator.git
   git-ref: 270851897110ec21b5b6fa8b9ba031abb98b9749
   build: mvn compile
@@ -105,7 +105,7 @@ projects:
   build: gradle jar
   clean: gradle clean
 
-- name: ojalgo
+- name: ojAlgo
   giturl: https://github.com/optimatika/ojAlgo.git
   git-ref: 0a28f91db144914dc58aa45ddf94a4bea72b8bf7
   build: mvn compile
@@ -117,13 +117,13 @@ projects:
 #   build: mvn compile
 #   clean: mvn clean
 
-- name: facedetection1
+- name: FaceDetection
   giturl: https://github.com/azeevg/FaceDetection.git
   git-ref: 1a8c91328f96e90cc2c8270d6adce9e663793bc0
   build: mvn compile
   clean: mvn clean
 
-- name: facer
+- name: Facer
   giturl: https://github.com/bharathk005/Facer.git
   git-ref: 6ce45ce52310fc820173a12b72b29261acdf3181
   build: ant
@@ -135,7 +135,7 @@ projects:
   build: mvn compile
   clean: mvn clean
 
-- name: parallelcolt
+- name: ParallelColt
   giturl: https://github.com/rwl/ParallelColt.git
   git-ref: 36a75e68abae9ed7ece5426cd96272a9ba328346
   build: mvn compile
@@ -154,14 +154,14 @@ projects:
   build: mvn compile
   clean: mvn clean
 
-- name: matrixtoolkit
+- name: matrix-toolkits-java
   giturl: https://github.com/hwinkler/matrix-toolkits-java.git
   git-ref: f2594128eee45a188957c854acede3d6a511d717
   build: mvn compile
   clean: mvn clean
 
 - name: exp4j
-  giturl: https://github.com/fasseg/exp4j
+  giturl: https://github.com/fasseg/exp4j.git
   git-ref: 8a4e2104b6e73d54bb7b0ac39fd18e7a0874c4ea
   build: mvn compile
   clean: mvn clean
