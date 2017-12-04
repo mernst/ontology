@@ -1,0 +1,211 @@
+projects:
+
+- name: nd4j
+  giturl: https://github.com/opprop-benchmarks/nd4j.git
+  build: mvn install
+  clean: mvn clean
+
+- name: boofcv
+  giturl: https://github.com/lessthanoptimal/BoofCV.git
+  git-ref: 16fff968dbbe07af4a9cb14395a89cde18ffb72e
+  build: gradle compileJava
+  clean: gradle clean
+
+- name: catalano
+  giturl: https://github.com/DiegoCatalano/Catalano-Framework.git
+  git-ref: 381b7c29ef73bca1e5479fc715fb285e6697d7bd
+  build-dir: Catalano.Image
+  build: ant jar
+  clean: ant clean
+
+- name: imgscalr
+  giturl: https://github.com/thebuzzmedia/imgscalr.git
+  git-ref: e1e1da77c12570f5c21d2f6ef42f0ce80c3fa092
+  build: mvn compile
+  clean: mvn clean
+
+- name: dyn4j
+  giturl: https://github.com/aas-integration/dyn4j.git
+  git-ref: 88073bd45b83ecdc61fc40b73baf4df1fa50411f
+  build: ant build
+  clean: ant clean
+
+- name: jreactphysics3d
+  giturl: https://github.com/kovertopz/jReactPhysics3D.git
+  git-ref: 8da0120f5fa2254a7e98a14f3446d97096bb0fd7
+  build: mvn package -Dmaven.test.skip=true
+  clean: mvn clean
+
+- name: react
+  giturl: https://github.com/flow/react.git
+  git-ref: e8f7ee5ec666d2d1783c8a16b9cbd49bc11f037c
+  build: mvn compile
+  clean: mvn clean
+
+- name: jmonkeyengine
+  giturl: https://github.com/jMonkeyEngine/jmonkeyengine.git
+  git-ref: 977610bbd7d9f000e4f79804465eec6a743b3789
+  build: gradle compileJava
+  clean: gradle clean
+
+- name: jbox2d
+  giturl: https://github.com/jbox2d/jbox2d.git
+  git-ref: 3746b69de71d3d23818cd4367b884c020c194981
+  build: mvn compile -pl !jbox2d-testbed-jogl,!jbox2d-testbed-javafx
+  clean: mvn clean
+
+- name: imagej
+  giturl: https://github.com/aas-integration/imagej.git
+  git-ref: fc5cc397096fadc749e573df0817d7835d885b1d
+  build: ant build
+  clean: ant clean
+
+- name: imglib2
+  giturl: https://github.com/imglib/imglib2.git
+  git-ref: 16af41a9beec79642ce0728ed198defa46c6e0dd
+  build: mvn compile
+  clean: mvn clean
+
+- name: thumbnailinator
+  giturl: https://github.com/coobird/thumbnailator.git
+  git-ref: 270851897110ec21b5b6fa8b9ba031abb98b9749
+  build: mvn compile
+  clean: mvn clean
+
+- name: Sort07
+  giturl: https://github.com/aas-integration/Sort07.git
+  git-ref: 3a79246dffbebfd14026b5fa3f98a734f243a506
+  timelimit: 120
+  build: ant
+  clean: ant clean
+
+- name: Sort09
+  giturl: https://github.com/aas-integration/Sort09.git
+  git-ref: 12f1464816ed34dbe24e395f578a3bf5196f5502
+  timelimit: 120
+  build: ant
+  clean: ant clean
+
+- name: Sort10
+  giturl: https://github.com/aas-integration/Sort10.git
+  git-ref: a65dc9a777cf10e228b572fa00c32eb99312f20a
+  timelimit: 120
+  build: ant
+  clean: ant clean
+
+- name: jcodec
+  giturl: https://github.com/jcodec/jcodec.git
+  git-ref: 0993f3ff68d28ea08b40732915c4009c7561b707
+  build: mvn compile
+  clean: mvn clean
+
+- name: ejml
+  giturl: https://github.com/lessthanoptimal/ejml.git
+  git-ref: 2a2bfb58d789148d06fc002e7118e5f870012683
+  build: gradle jar
+  clean: gradle clean
+
+- name: ojalgo
+  giturl: https://github.com/optimatika/ojAlgo.git
+  git-ref: 0a28f91db144914dc58aa45ddf94a4bea72b8bf7
+  build: mvn compile
+  clean: mvn clean
+
+# - name: commonsmath
+#   giturl: https://github.com/apache/commons-math.git
+#   git-ref: 657b1b49da5ea1593dd7f950eae99a88a8ada87a
+#   build: mvn compile
+#   clean: mvn clean
+
+- name: facedetection1
+  giturl: https://github.com/azeevg/FaceDetection.git
+  git-ref: 1a8c91328f96e90cc2c8270d6adce9e663793bc0
+  build: mvn compile
+  clean: mvn clean
+
+- name: facer
+  giturl: https://github.com/bharathk005/Facer.git
+  git-ref: 6ce45ce52310fc820173a12b72b29261acdf3181
+  build: ant
+  clean: ant clean
+
+- name: jviolajones
+  giturl: https://github.com/tc/jviolajones.git
+  git-ref: 2881bf4aa61775ecb9f09278390a3572065b7ef8
+  build: mvn compile
+  clean: mvn clean
+
+- name: parallelcolt
+  giturl: https://github.com/rwl/ParallelColt.git
+  git-ref: 36a75e68abae9ed7ece5426cd96272a9ba328346
+  build: mvn compile
+  clean: mvn clean
+
+- name: jama
+  giturl: https://github.com/cstroe/jama.git
+  git-ref: d6b3e3d192bb901aec5e16a084c824d8db336d74
+  build: mvn compile
+  clean: mvn clean
+
+- name: jblas
+  giturl: https://github.com/mikiobraun/jblas.git
+  git-ref: 65687a90318631a2f4cb176b623278d7cee05d59
+  git-opt: "--config transfer.fsckObjects=false"
+  build: mvn compile
+  clean: mvn clean
+
+- name: matrixtoolkit
+  giturl: https://github.com/hwinkler/matrix-toolkits-java.git
+  git-ref: f2594128eee45a188957c854acede3d6a511d717
+  build: mvn compile
+  clean: mvn clean
+
+- name: exp4j
+  giturl: https://github.com/fasseg/exp4j
+  git-ref: 8a4e2104b6e73d54bb7b0ac39fd18e7a0874c4ea
+  build: mvn compile
+  clean: mvn clean
+
+- name: JLargeArrays
+  giturl: https://gitlab.com/ICM-VisLab/JLargeArrays.git
+  git-ref: 31e6840a5636cdbd4f7f66a7bef73918d7a86e25
+  build: mvn compile
+  clean: mvn clean
+
+- name: jscience
+  giturl: https://github.com/tarelli/jscience
+  git-ref: 28bf87f3e98dde9524e877bade78d5a32728f65e
+  build: ant jarfile
+  clean: ant clean
+
+- name: la4j
+  giturl: https://github.com/vkostyukov/la4j
+  git-ref: db204167aa6161cd2104ce845e62518cae451d70
+  build: mvn compile
+  clean: mvn clean
+
+- name: jump
+  giturl: https://github.com/aas-integration/jump
+  git-ref: e05cac7b1b584a493978d6861cbc7fa762816f34
+  build: ant jar
+  clean: ant clean
+
+- name: scijava-common
+  giturl: https://github.com/scijava/scijava-common
+  git-ref: cfd3e736f74a7b4a900b2eb18521cbe45f0d62d5
+  dljc-opt: "--guess"
+  build: mvn compile
+  clean: mvn clean
+
+- name: scifio
+  giturl: https://github.com/scifio/scifio
+  git-ref: c6971950a3569ef8a2bdd81fa8fc3e2b89544cbb
+  dljc-opt: "--guess"
+  build: mvn compile
+  clean: mvn clean
+
+- name: nd4j
+  giturl: https://github.com/deeplearning4j/nd4j
+  git-ref: 0bc4e2224b1b9e4405b6f3111761956d4224439e
+  build: mvn compile -pl :nd4j-api
+  clean: mvn clean
