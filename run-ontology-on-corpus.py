@@ -8,9 +8,9 @@ ONTOLOGY_DIR = os.path.dirname(os.path.realpath(__file__))
 BENCHMARK_DIR = os.path.join(ONTOLOGY_DIR, "corpus")
 
 
-def main(argv):
+def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--corpus-file', dest='corpus_file')
+    parser.add_argument('--corpus-file', dest='corpus_file', default="sci-corpus.yml")
     args = parser.parse_args()
 
     tool_excutable = os.path.join(ONTOLOGY_DIR, "run-dljc.sh")
@@ -67,4 +67,4 @@ def git(*args):
     return subprocess.check_call(['git'] + list(args))
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()
