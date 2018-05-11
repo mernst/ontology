@@ -10,7 +10,6 @@ ONTOLOGY_DIR = os.path.dirname(os.path.realpath(__file__))
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--corpus-file', dest='corpus_file', default="sci-corpus.yml")
-    parser.add_argument('--corpus-file', dest='corpus_file', required=True)
     parser.add_argument('--corpus', dest='corpus')
     args = parser.parse_args()
 
