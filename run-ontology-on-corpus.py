@@ -9,12 +9,9 @@ ONTOLOGY_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def main():
     parser = argparse.ArgumentParser()
-<<<<<<< HEAD
     parser.add_argument('--corpus-file', dest='corpus_file', default="sci-corpus.yml")
-=======
     parser.add_argument('--corpus-file', dest='corpus_file', required=True)
     parser.add_argument('--corpus', dest='corpus')
->>>>>>> opprop/master
     args = parser.parse_args()
 
     tool_excutable = os.path.join(ONTOLOGY_DIR, "run-dljc.sh")
