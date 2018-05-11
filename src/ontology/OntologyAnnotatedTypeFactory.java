@@ -30,7 +30,7 @@ public class OntologyAnnotatedTypeFactory extends BaseAnnotatedTypeFactory {
 
     public OntologyAnnotatedTypeFactory(BaseTypeChecker checker) {
         super(checker);
-        OntologyUtils.initOntologyUtils(processingEnv, elements);
+        OntologyUtils.initOntologyUtils(processingEnv);
         postInit();
     }
 
@@ -41,7 +41,7 @@ public class OntologyAnnotatedTypeFactory extends BaseAnnotatedTypeFactory {
 
     @Override
     protected void addCheckedCodeDefaults(QualifierDefaults defaults) {
-        TypeUseLocation[] topLocations = { TypeUseLocation.ALL };
+        TypeUseLocation[] topLocations = {TypeUseLocation.ALL};
         defaults.addCheckedCodeDefaults(OntologyUtils.ONTOLOGY_TOP, topLocations);
     }
 
@@ -120,17 +120,11 @@ public class OntologyAnnotatedTypeFactory extends BaseAnnotatedTypeFactory {
 
         @Override
         public Void visitNewClass(NewClassTree node, AnnotatedTypeMirror type) {
-            switch (OntologyUtils.determineOntologyValue(type.getUnderlyingType())) {
-            case SEQUENCE: {
-                AnnotationMirror ontologyValue = OntologyUtils.createOntologyAnnotationByValues(processingEnv, OntologyValue.SEQUENCE);
-                type.replaceAnnotation(ontologyValue);
-                }
-                break;
-
-            case TOP:
-            default:
-                break;
+            AnnotationMirror ontologyAnno =OntologyUtils.getInstance().determineOntologyAnnotation(type.getUnderlyingType());
+            if (ontologyAnno != null) {
+                type.replaceAnnotation(ontologyAnno);
             }
+
             return super.visitNewClass(node, type);
         }
 
