@@ -119,9 +119,9 @@ task copyZ3 (type: Copy) {
 
 // Switch the Javac used by JSR308
 tasks.compileJava {
-    description = 'Compiles this project using the jsr308 compiler.'
+    description = 'Compiles this project using the Checker Framework compiler.'
     options.fork = true
-    options.forkOptions.executable="$jsr308_langtoolsDir/dist/bin/javac"
+    options.forkOptions.executable="$checkerFrameworkDir/checker/bin/javac"
     options.compilerArgs = [
         '-implicit:class',
         '-Awarns',
