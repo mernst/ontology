@@ -1,7 +1,11 @@
 #!/bin/bash
 
+echo Entering "$(cd "$(dirname "$0")" && pwd -P)/$(basename "$0")" in `pwd`
+
 # Fail the whole script if any command fails
 set -e
+
+set -x
 
 WORKING_DIR=$(cd $(dirname "$0") && pwd)
 . $WORKING_DIR/env-setup.sh
@@ -62,3 +66,5 @@ fi
 
 ##### build ontology without testing
 (cd $JSR308/ontology && gradle build -x test)
+
+echo Exiting "$(cd "$(dirname "$0")" && pwd -P)/$(basename "$0")" in `pwd`
