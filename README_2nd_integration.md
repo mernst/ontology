@@ -184,20 +184,20 @@ usage:
 the corpus based on these rules:
 
 ```bash
-python map2annotation --type-mapping <type_mappings>.json
+python3 map2annotation --type-mapping <type_mappings>.json
 ```
 
 2. propagate annotations in the corpus by mappings from fields to an ontology
 concept:
 
 ```bash
-python map2annotation --field-mapping <field_mappings>.json
+python3 map2annotation --field-mapping <field_mappings>.json
 ```
 
 3. do both:
 
 ```bash
-python map2annotation --type-mapping <type_mappings>.json --field-mapping <field_mappings>.json
+python3 map2annotation --type-mapping <type_mappings>.json --field-mapping <field_mappings>.json
 ```
 
 Note: when called from the command line, `map2annotation` will clean the source

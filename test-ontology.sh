@@ -36,4 +36,4 @@ if [ ! -d ../do-like-javac ] ; then
 fi
 
 # Running Ontology on working benchmarks
-python run-ontology-on-corpus.py --corpus-file worked-benchmarks.yml
+python3 run-ontology-on-corpus.py --corpus-file worked-benchmarks.yml

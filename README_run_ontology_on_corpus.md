@@ -15,7 +15,7 @@ command in directory `Ontology`:
 To run driver script `run-ontology-on-corpus.py`, you need first to
 install below packages:
 
-- pyYaml: `pip install pyyaml`
+- pyYaml: `pip3 install pyyaml`
 
 The driver script need python version higher than `2.7.10`.
 
@@ -35,7 +35,7 @@ To run ontology on sci-corpus, just run following command:
 
 ```bash
 # cd ontology
-python run-ontology-on-corpus.py
+python3 run-ontology-on-corpus.py
 ```
 
 This script would first fetching the projects defined in
