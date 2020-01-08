@@ -2,8 +2,8 @@ projects:
 
   nd4j:
     giturl: https://github.com/opprop-benchmarks/nd4j.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   ejml:
     giturl: https://github.com/opprop-benchmarks/ejml.git
@@ -13,60 +13,60 @@ projects:
   # We have infinite-loop problem with this project. So comment it out.
   # - name: commons-math
   #   giturl: https://github.com/opprop-benchmarks/commons-math.git
-  #   build: mvn install
-  #   clean: mvn clean
+  #   build: mvn -B install
+  #   clean: mvn -B clean
 
   jblas:
     giturl: https://github.com/opprop-benchmarks/jblas.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   matrix-toolkits-java:
     giturl: https://github.com/opprop-benchmarks/matrix-toolkits-java.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   ojAlgo:
     giturl: https://github.com/opprop-benchmarks/ojAlgo.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   exp4j:
     giturl: https://github.com/opprop-benchmarks/exp4j.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   JLargeArrays:
     giturl: https://github.com/opprop-benchmarks/JLargeArrays.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   jscience:
     giturl: https://github.com/opprop-benchmarks/jscience.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   la4j:
     giturl: https://github.com/opprop-benchmarks/la4j.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   scijava-common:
     giturl: https://github.com/opprop-benchmarks/scijava-common.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   imagej:
     giturl: https://github.com/opprop-benchmarks/imagej.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   scifio:
     giturl: https://github.com/opprop-benchmarks/scifio.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean
 
   jReactPhysics3D:
     giturl: https://github.com/opprop-benchmarks/jReactPhysics3D.git
-    build: mvn install
-    clean: mvn clean
+    build: mvn -B install
+    clean: mvn -B clean

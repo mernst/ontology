@@ -46,10 +46,10 @@ else
 fi
 
 ## Fast-build stubparser without testing.
-(cd $JSR308/stubparser && mvn -Dmaven.test.skip=true install)
+(cd $JSR308/stubparser && mvn -B -Dmaven.test.skip=true install)
 
 ## build checker-framework, with pre-built jdk
-(cd $JSR308/checker-framework && gradle assemble)
+(cd $JSR308/checker-framework && ./gradlew assemble)
 
 ##### build checker-framework-inference
 if [ -d $JSR308/checker-framework-inference ] ; then
@@ -58,7 +58,7 @@ else
     (cd $JSR308 && git clone --depth 1 https://github.com/"$REPO_SITE"/checker-framework-inference.git)
 fi
 
-(cd $JSR308/checker-framework-inference && gradle dist)
+(cd $JSR308/checker-framework-inference && ./gradlew dist)
 
 ##### build ontology without testing
 (cd $JSR308/ontology && gradle build -x test)

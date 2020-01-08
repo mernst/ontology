@@ -50,7 +50,7 @@ function runOntologyOnProject() {
     elif [ -e $gradle ]; then
         build_cmd="gradle"
     elif [ -e $mvn ]; then
-        build_cmd="mvn install"
+        build_cmd="mvn -B install"
     else
         echo "don't know for $1"
         return 1
