@@ -65,6 +65,7 @@ fi
 (cd $JSR308/checker-framework-inference && ./gradlew dist)
 
 ##### build ontology without testing
-(cd $JSR308/ontology && gradle build -x test)
+## Commented out because ontology does nto currently compile
+# (cd $JSR308/ontology && gradle build -x test)
 
 echo Exiting "$(cd "$(dirname "$0")" && pwd -P)/$(basename "$0")" in `pwd`
